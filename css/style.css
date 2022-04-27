@@ -1,0 +1,249 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+body{
+  background-color: rgb(225, 238, 233);
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  box-shadow: 10px 5px 5px rgb(125, 125, 125);
+  align-items: center;
+  padding-right: 50px;
+  padding-left: 20px;
+  position: fixed;
+}
+.menu-mobile {
+  width: 40px;
+  height: 25px;
+}
+.menu-desktop {
+  display: none;
+}
+.banner {
+  width: 100%;
+  height: 620px;
+  background-image: url(../img/baner2.jpg);
+  background-position: center;
+  border-radius: 10px;
+  
+}
+.conteudo-banner {
+  width: 100%;
+  color: rgb(253, 252, 252);
+  padding-top: 210px;
+  padding-left: 166px;
+}
+.conteudo-banner h1 {
+  font-size: 60px;
+  background-color: rgb(227, 11, 11);
+  width: 300px;
+  border-radius: 15px;
+}
+
+.logo-marca {
+  color: rgb(82, 16, 10);
+  font-size: xx-large;
+  margin-top: 15px;
+}
+.cidades {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 1px 5px rgb(125, 125, 125);
+  margin-top: 30px;
+  align-items: center;
+  background-color: white;
+  border-radius: 30px;
+  
+}
+h2 {
+  font-family: "Square Peg", cursive;
+  font-size: 40px;
+}
+.cards-cidades {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 3px 3px rgb(125, 125, 125);
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  align-items: center;
+  margin: 50px;
+  background-color: white;
+}
+.card:hover {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  border: 2px solid rgb(234, 113, 113);
+}
+.card img {
+  width: 100%;
+  height: 180px;
+  border-radius: 30px;
+}
+.card h3 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: rgb(82, 16, 10);
+}
+.card p {
+  text-align: center;
+  color: rgb(2, 48, 48);
+}
+.botao {
+  width: 130px;
+  height: 40px;
+  background-color: rgb(213, 50, 50);
+  border-radius: 40px;
+  cursor: pointer;
+  margin-top: 15px;
+  border: 2px solid #b5b3b3;
+}
+.botao a {
+  text-decoration: none;
+  color: white;
+}
+
+.botao span {
+  position: relative;
+  transition: 0.5s;
+}
+
+.botao span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.botao:hover span {
+  padding-right: 25px;
+}
+
+.botao:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.nos2 {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  padding: 30px;
+  color: rgb(0, 0, 0);
+  box-shadow: 10px 1px 5px rgb(125, 125, 125);
+  margin-bottom: 10px;
+  background-color: white;
+  border-radius: 30px;
+}
+.nos p {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  color: rgb(0, 0, 0);
+}
+.mapa {
+  width: 450px;
+  height: 300px;
+}
+.mapa img {
+  width: 100%;
+  height: 300px;
+  border-radius: 30px;
+}
+.rodape{
+  width: 100%;
+  height: 125px;
+  background-color: rgb(95, 91, 91);
+  margin-top: 20px;
+}
+.alunos{
+  display: flex;
+  justify-content: space-around;
+}
+.aluno{
+  margin-left: 20px;
+}
+.aluno h4{
+  color: white;
+  margin: 5px;
+}
+.aluno p{
+  color: white;
+  margin: 5px;
+}
+.rodape2{
+  background-color: rgb(95, 91, 91);
+  text-align: center;
+}
+@media (min-width: 769px) {
+  .menu-mobile {
+    display: none;
+  }
+  .menu-desktop {
+    min-width: 300px;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(141, 5, 5);
+  }
+  .menu-desktop li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .menu-desktop li:hover {
+    border-radius: 4px;
+    background-color: rgb(246, 201, 201);
+  }
+  .cards-cidades {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .nos {
+    display: flex;
+  }
+  .nos p {
+    text-align: left;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .mapa {
+    width: 650px;
+    height: 500px;
+  }
+  .mapa img {
+    width: 650px;
+    height: 500px;
+  }
+}
+@media (max-width: 1224px){
+.nos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+}
